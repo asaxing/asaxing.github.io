@@ -1,3 +1,30 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://asaxing.me"
+languageCode = "en-us"
+theme = "yinyang"
+DefaultContentLanguage = "cn"
+title = "know yourself know the world"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 2
+
+[author]
+  name = "asaxing"
+
+[params]
+  extraHead = ''
+  mainSections = ["posts"]
+
+[[params.socials]]
+  name = "RSS"
+  link = "/index.xml"
+
+[[params.socials]]
+  name = "About"
+  link = "/about"
